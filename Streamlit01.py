@@ -26,6 +26,6 @@ if(st.button("แสดงข้อมูลตัวอย่าง")):
     st.write(df.head(10))
     st.button("ไม่แสดงข้อมูลตัวอย่าง")
 
-else
+else:
     st.button("ไม่แสดงข้อมูลตัวอย่าง")
 
