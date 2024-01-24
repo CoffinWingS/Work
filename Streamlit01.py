@@ -29,3 +29,16 @@ if(st.button("แสดงข้อมูลตัวอย่าง")):
 else:
     st.button("ไม่แสดงข้อมูลตัวอย่าง")
 
+if(st.button("แสดงกราฟแท่ง")):
+    chart_data = pd.DataFrame(
+    {
+        "ประเภทดอกไม้": df['variety'],
+        "ความกว้าง": df['sepal.width'],
+        "ความยาว": df['sepal.length']    
+        }
+    )
+    st.bar_chart(chart_data, x="ประเภทดอกไม้", y=["ความกว้าง","ความยาว"], color=["#FF0000", "#0000FF"])
+    st.button("ไม่แสดงข้อมูลสถิติ")
+else:
+    st.button("ไม่แสดงข้อมูลสถิติ")
+
