@@ -64,5 +64,5 @@ if(st.button("แสดงค่าpie")):
     st.pyplot(fig1)
 
 else:
-    st.button("แสดงค่าpie"):
+    st.button("ไม่แสดงค่าpie"):
 
