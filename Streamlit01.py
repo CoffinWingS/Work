@@ -1,5 +1,5 @@
 import streamlit as st
-
+import pandas as pd
 st.title("การทดสอบสร้างเว็บด้วยPython")
 st.image("./image/bens.jpeg")
 st.header("การนำเสนอข้อมูลกราฟด้วย Python") 
@@ -19,5 +19,5 @@ with col3:
     st.image("./image/setosa.jpg")
 
     #import pandas ad pd
-    df=pd.read_csv("./data/iris.csv")
-    st.write(df.head(10))
+df=pd.read_csv("./data/iris.csv")
+st.write(df.head(10))
